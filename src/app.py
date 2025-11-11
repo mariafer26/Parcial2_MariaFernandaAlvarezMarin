@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 
 def compute_factorial(value: int) -> int:
-    """Compute factorial for non-negative integers."""
     if value < 0:
         raise ValueError("El factorial solo está definido para enteros no negativos.")
     return math.factorial(value)
